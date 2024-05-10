@@ -65,7 +65,7 @@ const produtos = [
         nome: "Colar de Pérolas",
         preco: 49.99,
         categoria: "jóia",
-        imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe2ctxas0KFgzM0Cr9x97jt3h5HbfLI_B0yTCj5UL9hA&s"
+        imagem: "https://images.tcdn.com.br/img/img_prod/987443/colar_perolas_barrocas_ouro_291_1_930886653aba2f458a4e8076e6c12057.jpg"
     },
     {
         id: 8,
