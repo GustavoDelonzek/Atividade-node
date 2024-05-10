@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body-cor{
+    background-color: #2F4550;
+    max-width: 100%;
+
+}
+
+.titulo-pagina{
+    font-size: 56px;
+}
+
+.lista-produto  a {
+    text-decoration: none;
+
+}
+
+.lista-produto{
+    background-color: #2F4550;
+    padding: 0px;
+}
+
+.lista-produto .card{
+    max-height: 400px;
+    min-width: 100%;
+}
+
+.lista-produto .card-img-top {
+    object-fit: cover;
+    height: 300px;
+    border-radius: 5px;
+}
+
+.lista-produto .card-body .card-text, .lista-produto .card-body .card-title{
+    
+    color: #fff;
+}
+
+.lista-produto .card {
+    /* From https://css.glass */
+    background-color: #0000003a;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(1px);
+    border: 1px solid rgba(212, 195, 195, 0.295);
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categorias</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body class="body-cor container-fluid">
+    <main class="d-flex justify-content-center  flex-column">
+        <h2 class="text-center p-4 text-white">Resultados para sua pesquisa</h2>
+        <a href="/" class="text-center">Volta a lista completa de postagens</a>
+        <ul class="row lista-produto justify-content-center">
+
+            <% produtosCategoria.forEach(function(produto) {%>
+                <a class="<% if (produtosCategoria.length < 3) {%> col-6 <% } else {%> col-4 <% }; %>" href="/products/<%= produto.id %>">
+                    <li class="card p-3 my-2">
+                        <img src="<%= produto.imagem %>" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                <%= produto.nome %>
+                            </h4>
+                        </div>
+                    </li>
+                </a>
+                <% }); %>
+        </ul>
+
+
+    </main>
+
+
+
+    <footer class=" p-3">
+        <p class="text-center text-white">Todos os direitos reservados </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
